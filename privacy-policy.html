@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy</title>
+  <title>Privacy Policy / 隐私政策</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,113 +18,193 @@
       max-width: 800px;
       margin: 40px auto;
       padding: 20px;
-      background: #ffffff;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: #fff;
       border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    h1 {
-      font-size: 2em;
+    .lang-toggle {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 8px 12px;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 4px;
+    }
+
+    h1, h2 {
       color: #222;
-      margin-bottom: 0.5em;
     }
 
-    h2 {
-      font-size: 1.4em;
-      margin-top: 1.5em;
-      color: #444;
+    .lang-cn {
+      display: none;
     }
 
-    p {
-      margin: 0.8em 0;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 0.5em;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        margin: 20px;
-        padding: 15px;
-      }
-
-      h1 {
-        font-size: 1.6em;
-      }
-
-      h2 {
-        font-size: 1.2em;
-      }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 40px;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Privacy Policy</h1>
-    <p><strong>Effective Date:</strong> 19 Jul 2025</p>
+    <div class="lang-toggle">
+      <button onclick="toggleLang()">切换语言 / Switch Language</button>
+    </div>
 
-    <p>Kowloone Group ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our reward application ("App").</p>
+    <!-- English Version -->
+    <div class="lang lang-en">
+      <h1>Privacy Policy</h1>
+      <p><strong>Effective Date:</strong> 19 July 2025</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>When you register or use the App, we may collect the following personal information:</p>
-    <ul>
-      <li>Name</li>
-      <li>Date of Birth</li>
-      <li>Email Address</li>
-      <li>Phone Number</li>
-      <li>Gender</li>
-    </ul>
-    <p>We may also collect usage and device data (e.g., IP address, device type, and interaction logs) to help us improve our service.</p>
+      <p>Kowloone Group Sdn Bhd ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our reward application ("App").</p>
 
-    <h2>2. How We Use Your Information</h2>
-    <p>We use the information we collect to:</p>
-    <ul>
-      <li>Create and manage your user account</li>
-      <li>Verify your identity and eligibility for rewards</li>
-      <li>Personalize your experience and offers</li>
-      <li>Communicate with you regarding your account, rewards, or promotions</li>
-      <li>Improve the App’s performance and user experience</li>
-      <li>Comply with legal obligations and resolve disputes</li>
-    </ul>
+      <h2>1. Information We Collect</h2>
+      <p>When you register or use the App, we may collect the following personal information:</p>
+      <ul>
+        <li>Name</li>
+        <li>Date of Birth</li>
+        <li>Email Address</li>
+        <li>Phone Number</li>
+        <li>Gender</li>
+      </ul>
+      <p>We may also collect usage and device data (e.g., IP address, device type, and interaction logs) to help us improve our service.</p>
 
-    <h2>3. Sharing of Information</h2>
-    <p>We do not sell your personal information.</p>
-    <p>We may share your information with:</p>
-    <ul>
-      <li><strong>Service providers</strong> who help us operate the App (e.g., hosting, analytics, customer support)</li>
-      <li><strong>Partners or merchants</strong> for processing and delivering your rewards (only where necessary)</li>
-      <li><strong>Authorities</strong> if required by law or to protect our rights</li>
-    </ul>
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li>Create and manage your user account</li>
+        <li>Verify your identity and eligibility for rewards</li>
+        <li>Personalize your experience and offers</li>
+        <li>Communicate with you regarding your account, rewards, or promotions</li>
+        <li>Improve the App’s performance and user experience</li>
+        <li>Comply with legal obligations and resolve disputes</li>
+      </ul>
 
-    <h2>4. Data Retention</h2>
-    <p>We retain your personal information for as long as your account is active or as needed to comply with legal obligations, resolve disputes, and enforce our agreements.</p>
+      <h2>3. Sharing of Information</h2>
+      <p>We do not sell your personal information.</p>
+      <p>We may share your information with:</p>
+      <ul>
+        <li><strong>Service providers</strong> who help us operate the App (e.g., hosting, analytics, customer support)</li>
+        <li><strong>Partners or merchants</strong> for processing and delivering your rewards (only where necessary)</li>
+        <li><strong>Authorities</strong> if required by law or to protect our rights</li>
+      </ul>
 
-    <h2>5. Your Choices</h2>
-    <p>You may:</p>
-    <ul>
-      <li>Update your profile information in the app</li>
-      <li>Request deletion of your account and associated data</li>
-    </ul>
-    <p>To exercise these rights, please contact us at: <strong>kowloone.fnbgroup.tech@gmail.com</strong></p>
+      <h2>4. Data Retention</h2>
+      <p>We retain your personal information for as long as your account is active or as needed to comply with legal obligations, resolve disputes, and enforce our agreements.</p>
 
-    <h2>6. Security</h2>
-    <p>We implement reasonable administrative, technical, and physical safeguards to protect your personal information. However, no method of transmission over the internet is 100% secure.</p>
+      <h2>5. Your Choices</h2>
+      <p>You may:</p>
+      <ul>
+        <li>Update your profile information in the app</li>
+        <li>Opt out of marketing communications at any time</li>
+        <li>Request deletion of your account and associated data</li>
+      </ul>
+      <p>To exercise these rights, please contact us at: <strong>kowloone.fnbgroup.tech@gmail.com</strong></p>
 
-    <h2>7. Children’s Privacy</h2>
-    <p>Our App is not intended for children under 13 (or the age defined by local law), and we do not knowingly collect information from them.</p>
+      <h2>6. Security</h2>
+      <p>We implement reasonable administrative, technical, and physical safeguards to protect your personal information. However, no method of transmission over the internet is 100% secure.</p>
 
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the updated policy in the App or via email.</p>
+      <h2>7. Children’s Privacy</h2>
+      <p>Our App is not intended for children under 13 (or the age defined by local law), and we do not knowingly collect information from them.</p>
 
-    <h2>9. Contact Us</h2>
-    <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
-    <p><strong>Kowloone Group Sdn Bhd</strong><br>
-       Email: <strong>kowloone.fnbgroup.tech@gmail.com</strong><br>
+      <h2>8. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the updated policy in the App or via email.</p>
+
+      <h2>9. Contact Us</h2>
+      <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
+      <p><strong>Kowloone Group Sdn Bhd</strong><br>
+         Email: <strong>kowloone.fnbgroup.tech@gmail.com</strong></p>
+    </div>
+
+    <!-- Chinese Version -->
+    <div class="lang lang-cn">
+      <h1>隐私政策</h1>
+      <p><strong>生效日期：</strong> [插入日期]</p>
+
+      <p>Kowloone Group Sdn Bhd（“我们”）致力于保护您的隐私。本隐私政策说明了我们在您使用我们的奖励应用程序（“应用”）时如何收集、使用、披露和保护您的个人信息。</p>
+
+      <h2>1. 我们收集的信息</h2>
+      <p>当您注册或使用本应用时，我们可能会收集以下个人信息：</p>
+      <ul>
+        <li>姓名</li>
+        <li>出生日期</li>
+        <li>电子邮件地址</li>
+        <li>手机号码</li>
+        <li>性别</li>
+      </ul>
+      <p>我们还可能收集使用和设备数据（例如 IP 地址、设备类型、操作记录等），以帮助我们改进服务。</p>
+
+      <h2>2. 我们如何使用您的信息</h2>
+      <p>我们收集的信息可能用于以下目的：</p>
+      <ul>
+        <li>创建和管理您的用户账户</li>
+        <li>验证您的身份及奖励资格</li>
+        <li>为您个性化推荐奖励和体验</li>
+        <li>与您沟通账户、奖励或促销活动相关的信息</li>
+        <li>改进应用的性能和用户体验</li>
+        <li>遵守法律义务、解决争议</li>
+      </ul>
+
+      <h2>3. 信息共享</h2>
+      <p>我们不会出售您的个人信息。</p>
+      <p>我们可能会与以下方共享您的信息：</p>
+      <ul>
+        <li><strong>服务提供商</strong>（如托管、分析或客服供应商）</li>
+        <li><strong>合作商家</strong>（仅在需要时用于处理奖励）</li>
+        <li><strong>政府机关或执法部门</strong>（如法律要求或保护我们的权利）</li>
+      </ul>
+
+      <h2>4. 数据保留</h2>
+      <p>我们会在您的账户处于激活状态期间或为符合法律义务、解决争议、执行协议所需的期限内保留您的个人信息。</p>
+
+      <h2>5. 您的选择</h2>
+      <p>您可以：</p>
+      <ul>
+        <li>在应用中更新您的个人信息</li>
+        <li>随时选择不接收营销通知</li>
+        <li>请求删除您的账户及相关信息</li>
+      </ul>
+      <p>如需行使上述权利，请通过以下方式联系我们：<strong>kowloone.fnbgroup.tech@gmail.com</strong></p>
+
+      <h2>6. 信息安全</h2>
+      <p>我们采取合理的行政、技术和物理措施来保护您的个人信息。但请注意，互联网传输无法保证百分之百安全。</p>
+
+      <h2>7. 儿童隐私</h2>
+      <p>我们的应用不面向 13 岁以下儿童（或当地法律规定的年龄以下儿童），我们不会主动收集此类用户的信息。</p>
+
+      <h2>8. 政策变更</h2>
+      <p>我们可能会不时更新本隐私政策，重大变更将通过应用或电子邮件通知您。</p>
+
+      <h2>9. 联系我们</h2>
+      <p>如果您对本隐私政策有任何疑问或担忧，请联系我们：</p>
+      <p><strong>Kowloone Group Sdn Bhd</strong><br>
+         邮箱：<strong>kowloone.fnbgroup.tech@gmail.com</strong><br>
+    </div>
+
+    <footer>&copy; 2025 Your Company Name. All rights reserved.</footer>
   </div>
+
+  <script>
+    function toggleLang() {
+      const en = document.querySelector('.lang-en');
+      const cn = document.querySelector('.lang-cn');
+      if (en.style.display === 'none') {
+        en.style.display = 'block';
+        cn.style.display = 'none';
+      } else {
+        en.style.display = 'none';
+        cn.style.display = 'block';
+      }
+    }
+  </script>
 </body>
 </html>
