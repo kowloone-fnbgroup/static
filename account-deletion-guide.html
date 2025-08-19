@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Account Deletion & Data Removal | KowlooneApp by Kowloone Group</title>
+  <meta name="description" content="How users of KowlooneApp by Kowloone Group can delete their account and what happens to their data (what's deleted, what is retained, and retention periods)." />
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --card: #111217;
+      --muted: #a7b0c0;
+      --text: #e6e9ef;
+      --accent: #6ea8fe;
+      --border: #22242b;
+      --ok: #2ecc71;
+      --warn: #f39c12;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #0b0c10 0%, #0e1015 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+    header {
+      background: rgba(255,255,255,0.02);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; backdrop-filter: blur(8px);
+    }
+    header .container { padding: 18px 20px; }
+    .brand {
+      display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+    }
+    .brand h1 { margin: 0; font-size: 1.2rem; letter-spacing: .2px; }
+    .brand .dev { color: var(--muted); font-size: .95rem; }
+    .page-title { font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 18px 0 6px; }
+    .subtitle { color: var(--muted); margin: 0 0 22px; }
+
+    .callout {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 18px 18px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      display: grid;
+      gap: 10px;
+    }
+    .steps { counter-reset: step; margin: 0; padding: 0; list-style: none; }
+    .steps li { 
+      counter-increment: step; 
+      padding: 12px 12px 12px 44px; 
+      border-left: 3px solid #232632; 
+      position: relative; 
+      background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+      border-radius: 12px;
+      margin: 8px 0;
+    }
+    .steps li::before {
+      content: counter(step);
+      position: absolute; left: 12px; top: 10px;
+      width: 24px; height: 24px; border-radius: 999px;
+      display: grid; place-items: center; font-weight: 700; font-size: 0.9rem;
+      background: #1b1d24; border: 1px solid var(--border); color: var(--muted);
+    }
+    section { margin: 36px 0; }
+    h2 { font-size: 1.25rem; margin: 0 0 12px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 18px;
+      border-radius: 16px;
+    }
+    .list { margin: 0; padding-left: 18px; }
+    .pill {
+      display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: .85rem;
+      border: 1px solid var(--border); background: #14161c; color: var(--muted);
+    }
+    .grid { display: grid; gap: 16px; }
+    @media (min-width: 720px) { .grid.two { grid-template-columns: 1fr 1fr; } }
+    footer { color: var(--muted); font-size: .95rem; border-top: 1px solid var(--border); padding-top: 18px; }
+    .badge { font-weight: 600; color: var(--ok); }
+    .warn { color: var(--warn); font-weight: 600; }
+    .btn {
+      display: inline-block; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--border);
+      background: #171923; color: var(--text); text-decoration: none; font-weight: 600;
+    }
+    .btn:hover { filter: brightness(1.07); }
+    code { background: #171923; padding: 2px 6px; border-radius: 6px; border: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand" aria-label="App and Developer">
+        <h1>KowlooneApp</h1>
+        <span class="dev">by Kowloone Group</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <h2 class="page-title">Account Deletion & Data Removal</h2>
+    <p class="subtitle">This page explains how users of <strong>KowlooneApp</strong> (by <strong>Kowloone Group</strong>) can delete their account and what happens to their data afterward.</p>
+
+    <section aria-labelledby="steps-title">
+      <div class="callout">
+        <h2 id="steps-title">How to Request Account Deletion</h2>
+        <ol class="steps">
+          <li>Open the <strong>KowlooneApp</strong> app.</li>
+          <li>Go to <strong>Profile &gt; Edit Profile &gt; Delete Account</strong>.</li>
+          <li>Follow the on-screen instructions to confirm.</li>
+          <li>Your account will be deactivated immediately after you confirmed.</li>
+        </ol>
+        <p>
+          Can’t access the app? Email us: 
+          <a class="btn" href="mailto:kowloone.fnbgroup.tech@gmail.com" aria-label="Email support to request deletion">kowloone.fnbgroup.tech@gmail.com</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="grid two" aria-labelledby="data-scope-title">
+      <div class="card">
+        <h2 id="data-scope-title">Data That Will Be Deleted</h2>
+        <ul class="list">
+          <li>Profile information (e.g., name, email, phone)</li>
+          <li>Login credentials and authentication data</li>
+          <li>App activity history (e.g., reservations, orders, loyalty points)</li>
+          <li>User‑generated content (e.g., reviews, comments, uploads)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Data That May Be Retained</h2>
+        <ul class="list">
+          <li>Transaction/payment records for <strong>5 years</strong> (legal/tax compliance)</li>
+          <li>Fraud prevention & security logs for <strong>3 months</strong></li>
+          <li>Server backups for up to <strong>2 weeks</strong> (then auto‑purged)</li>
+        </ul>
+        <p class="pill" aria-label="Retained data limitation">Retained data is stored securely and not used for marketing.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="retention-title">
+      <div class="card">
+        <h2 id="retention-title">Retention Periods</h2>
+        <ul class="list">
+          <li><span class="badge">Deleted immediately:</span> profile, login details, preferences, app activity history.</li>
+          <li><span class="badge">Temporary backups:</span> retained up to <strong>3 days</strong> before automatic removal.</li>
+          <li><span class="badge">Required by law:</span> transaction/payment data for up to <strong>5 years</strong>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid two" aria-labelledby="contact-title">
+      <div class="card">
+        <h2 id="contact-title">Contact Us</h2>
+        <p>If you have questions about account deletion or data handling, contact us:</p>
+        <p>
+          Email: <a href="mailto:kowloone.fnbgroup.tech@gmail.com">kowloone.fnbgroup.tech@gmail.com</a><br />
+        </p>
+      </div>
+      <div class="card">
+        <h2>Notes</h2>
+        <p class="warn">Important:</p>
+        <ul class="list">
+          <li>Some data may be retained only to meet legal or security obligations.</li>
+          <li>Once deleted, your account and data cannot be recovered.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>Last updated: <time datetime="2025-08-19">2025-08-19</time></p>
+      <p>This page refers to <strong>KowlooneApp</strong> by <strong>Kowloone Group</strong> as shown on our Google Play store listing.</p>
+    </footer>
+  </main>
+</body>
+</html>
